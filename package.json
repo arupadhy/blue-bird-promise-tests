@@ -1,0 +1,31 @@
+{
+  "name": "bluebird-stuff",
+  "version": "1.0.0",
+  "description": "This is to use bluebird promises effectively in node",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "rm -rf dist && node_modules/typescript/bin/tsc",
+    "ut": "npm run tsc && node_modules/mocha/bin/mocha dist/spec/*.js --timeout 10000"
+  },
+  "keywords": [
+    "bluebird",
+    "promise"
+  ],
+  "author": "arvind",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "chalk": "^2.1.0",
+    "node-fetch": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.8",
+    "@types/chalk": "^0.4.31",
+    "@types/mocha": "^2.2.42",
+    "@types/node-fetch": "^1.6.7",
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0",
+    "typescript": "^2.5.2"
+  }
+}
